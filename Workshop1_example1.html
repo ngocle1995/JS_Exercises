@@ -20,7 +20,19 @@
 			} else if (x <=50 && x >30) {
 				document.write("<p>Middle aged man, who ordered som " + order + "</p>");
 			} else
-				document.write("<h3>It seems you're bit underaged.</h3>");
+				document.write("<h3>It seems you're bit underaged.</h3>
+			
+			document.write('<hr/><h2>4. Loops</h2><ol>')
+        	var arr = [];
+        	for (var i=0; i<15; i++) {
+            	arr.push( Math.floor((Math.random() * 100) + 1));
+            	console.log(arr[i]);
+            	document.write('<li>' + arr[i] + '</li>');
+        	}
+        	document.write('</ol>')
+        	console.log(arr);
+
+			document.write('<hr/><h2>5. Functions</h2><ol>')
 		</script>
 
 	</body>
