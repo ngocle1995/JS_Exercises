@@ -48,6 +48,33 @@
         	// Call the value and pass the returned value to alert();
         	alert(areYouOldEnough(5));
         	alert(areYouOldEnough(25));
+
+			document.write('<hr/><h2>6. Objects</h2>')
+			var people = [
+            {
+                firstname: 'John',
+                lastname: 'Doe',
+                age: 50,
+                eyeColor: 'blue',
+                address: 'Street 12 901290 City',
+                phone: '123435',
+                printInfo: function() {return(this.firstname + ' ' + this.lastname + '<br/>')}
+            },
+            {
+                firstname: 'Robert',
+                lastname: 'Smith',
+                age: 22,
+                eyeColor: 'brown',
+                address: 'Street 12 901290 City',
+                phone: '123435',
+                printInfo: function() {return(this.firstname + ' ' + this.lastname + '<br/>')}
+            }
+        	]
+        		var text="<hr/><h2>6. Objects</h2>";
+        		for(i=0; i<people.length; i++) {
+            	text += people[i].printInfo();
+        	}
+        	document.write(text);
 		</script>
 
 	</body>
