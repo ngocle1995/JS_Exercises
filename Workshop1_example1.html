@@ -3,19 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Workshop 1</title>
-		<!-- script tag is where Javascript goes to -->
-		<script>
-			alert("Hello World!")
-			for(var i = 0; i < 400; i++) {
-				console.log("This round is " + i);
-			}
-		</script>
+
 
 	</head>
 
 	<body>
-		<h1>Welcome to example page</h1>
-		<p> Lorem ipsum dolorem...   </p>
+		<h1>Worksop 1 - Solutions</h1>
+		<hr/>
+		<h2>3. Conditionals</h2>
+		<script>
+			var x = 50;
+			var order = 'Beer';
+			if (x >50) {
+				document.write("<strong>He's over 50!</strong>");
+				console.log("He's over 50!")
+			} else if (x <=50 && x >30) {
+				document.write("<p>Middle aged man, who ordered som " + order + "</p>");
+			} else
+				document.write("<h3>It seems you're bit underaged.</h3>");
+		</script>
 
 	</body>
 
