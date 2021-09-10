@@ -32,7 +32,22 @@
         	document.write('</ol>')
         	console.log(arr);
 
-			document.write('<hr/><h2>5. Functions</h2><ol>')
+			document.write('<hr/><h2>5. Functions</h2>')
+			// Returns true if age is over 18, otherwise returns false
+			function areYouOldEnough(age) {
+            if (age < 18){
+                console.log('FALSE: Age is ' + age);
+                return false;
+            }else
+                console.log('true');
+                return 'TRUE: Age is ' + age;
+        	}
+			// Call the function and pass the returned value to the console or to the document
+			console.log( areYouOldEnough(16) );
+        	document.write( areYouOldEnough(19) );
+        	// Call the value and pass the returned value to alert();
+        	alert(areYouOldEnough(5));
+        	alert(areYouOldEnough(25));
 		</script>
 
 	</body>
